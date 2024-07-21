@@ -32,8 +32,20 @@ There are 3 questions and there should be at least 3 separate commits, at least 
 2. For what size class is a 2:1 odds bet fair.
 3. How much money would Brownlow be expected to end up with if the bets went as described.
 
+
 Question 3: How much money would Brownlow be expected to and up with if the bets went as described. 
 
+
+## Our strategy is to build a Function and the use it to answer the three questions. 
+
+The function will be given a class_size by number of students, odds, and Number_of_times brownlow made the bet.  It will give you back how much Brownlows earnings were. We will use it to answer our three questions below. If you can, improve this function by giving default values to some of its inputs. 
+
+# In the class and payoff as described  If you highered 40 brownlow substitute teachers to do the same thing that Brownlow did then.
+## what is their average earnings
+## the standard deviation and a 95% confidence interval for their earnings?
+  
+<!--Explain and display your method of coming up with a 95% confidence interval of  professor Brownlows winnings (or losings)-->
+   
 ```{r}
 teachers<-numeric(40)
 for(i in 1:40){
@@ -51,32 +63,16 @@ If looking at the standard deviation `r sd(teachers)`
 We will subtract it two times the mean and add it two times the mean showing the following :
 
 `r mean (teachers) -2*sd(teachers)` to `r mean (teachers) +2*sd(teachers)`
-  
-
-
-## Our strategy is to build a Function and the use it to answer the three questions. 
-
-The function will be given a class_size by number of students, odds, and Number_of_times brownlow made the bet.  It will give you back how much Brownlows earnings were. We will use it to answer our three questions below. If you can, improve this function by giving default values to some of its inputs. 
-
-# In the class and payoff as described  If you highered 40 brownlow substitute teachers to do the same thing that Brownlow did then.
-## what is their average earnings
-## the standard deviation and a 95% confidence interval for their earnings?
-  
-<!--Explain and display your method of coming up with a 95% confidence interval of  professor Brownlows winnings (or losings)-->
-
+        
 
 # What are the fair odds? Use manipulation of odds in the function to tune Brownlows earnings to zero. 
-
-Knowing that BrownLow is giving a 2:1 bet that at least two people in the same class have the same birthday, we will be going over the result 
-
-
-
 
 
 <!--Decide on your methods:  In this section explain the approach you will take to attack the issue --- how will you decide on a likely estimate of professor Brownlow's earnings or losses after 637 bets. Also explain how you construct a 95% confidence interval about your estimate of his winnings !-->
 
 
-
+Knowing that BrownLow is giving a 2:1 bet that at least two people in the same class have the same birthday, we will be going over the result of the wager to see if they are fair odds in BrownLows earnings. Havings the mean of the 40 teachers and subtracting two and adding two standard deviation, we can come up with another way to see if the hypothesis is fair on matching birthday in a 35 person in class.
+  
 
 # What size of class makes the 2:1 bet fair?  Use manipulation of number of Students to tune Brownlows earnings to zero.
 
