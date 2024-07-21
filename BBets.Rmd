@@ -94,12 +94,19 @@ We had to mess with the numbers for a while to make this bet fair, and the numbe
 
 <!--Explain and display the results of your method of coming up with the estimate of professor Brownlows betting profits!-->
 
+```{r}
+teachers<-numeric(1000)
+for(i in 1:1000){
+teachers[i]=BrLw(numClass = 29)
+}
+```
 
-
-
-
-
-
+```{r}
+favstats(teachers)
+```
+   
+The fair number of students in each class would be 29 students. With this number we are earning about $28.
+   
 
 # Discussion and Conclusion
 
